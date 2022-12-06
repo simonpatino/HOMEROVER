@@ -4,7 +4,8 @@ AF_DCMotor engine1(1);
 AF_DCMotor engine2(2);
 AF_DCMotor engine3(3);
 AF_DCMotor engine4(4);
-
+//motor 2 and 4 are on the top while 
+//motor 1 and 3 are on the bottom. HW-130 SHIELD MOTOR DRIVER
 
 void setup() {
   // put your setup code here, to run once:
