@@ -11,19 +11,28 @@ void setup() {
   // put your setup code here, to run once:
 
 
- engine1.setSpeed(200);
- engine2.setSpeed(200);
- engine3.setSpeed(200);
- engine4.setSpeed(200);
+ engine1.setSpeed(0);
+ engine2.setSpeed(0);
+ engine3.setSpeed(0);
+ engine4.setSpeed(0);
 }
+  
+// a void loop is always necesary on arduino. In case you forget it --->
+//undefined reference to `loop'
+//collect2: error: ld returned 1 exit status
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
+
+}
+void forward() {
+  
 
   engine2.run(BACKWARD);
   engine4.run(FORWARD);
   engine1.run(BACKWARD);
   engine3.run(FORWARD);
-  //engine4.run(RELEASE);
+ 
 
 }
+//void function doesn't return a value while function() always return a value 
